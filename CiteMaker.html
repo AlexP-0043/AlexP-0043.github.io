@@ -15,16 +15,7 @@
   <label for='date'>Link:</label>
   <input type="text" id="link"><br>
   <button onclick="makecite();">Submit</button>
-  <script>
-    var auth = document.getElementById("author");
-    var articletitle = document.getElementById("title");
-    var pub = document.getElementById("publisher");
-    var articledate = document.getElementById("date");
-    var articlelink = document.getElementById("link");
-    function makecite(){
-      document.getElementById('final').innerHTML = auth.value + ', ' + title.value + ', ' + pub.value + ', ' + articledate.value + ', ' + articlelink.value;
-    }
-  </script>
+  <script type="text/javascript" src="https://alexp-0043.github.io/citeMakerScript.js"></script>
   <p id='final'></p>
   </body>
 </html>
