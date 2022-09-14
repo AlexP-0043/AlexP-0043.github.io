@@ -1,14 +1,8 @@
-function copyClipboard() {
-  // Get the text field
-  var copyText = document.getElementById("final");
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
+function copyDivToClipboard() {
+                    var range = document.createRange();
+                    range.selectNode(document.getElementById("final"));
+                    window.getSelection().removeAllRanges(); 
+                    window.getSelection().addRange(range); 
+                    document.execCommand("copy");
+                    window.getSelection().removeAllRanges();
 }
