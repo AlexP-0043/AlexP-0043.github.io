@@ -1,6 +1,6 @@
-function myFunction() {
+function copyClipboard() {
   // Get the text field
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("copyClip");
 
   // Select the text field
   copyText.select();
